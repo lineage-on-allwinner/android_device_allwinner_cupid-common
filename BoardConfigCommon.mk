@@ -39,5 +39,9 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
 TARGET_BOARD_PLATFORM := cupid
 TARGET_BOOTLOADER_BOARD_NAME := sun50iw9p1
 
+# Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+
 # Inherit the proprietary files
 include vendor/allwinner/cupid-common/BoardConfigVendor.mk
