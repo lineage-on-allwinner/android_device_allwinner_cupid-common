@@ -1,2 +1,5 @@
 on early-init
     setprop sys.usb.configfs 1
+
+on init
+    copy /sys/devices/platform/soc/usbc0/usb_device /dev/null
