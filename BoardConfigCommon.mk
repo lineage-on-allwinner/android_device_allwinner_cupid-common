@@ -26,6 +26,15 @@ BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=0,1,2
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
+# Kernel
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
+TARGET_KERNEL_SOURCE := kernel/allwinner/h6
+TARGET_KERNEL_CLANG_COMPILE := false
+BOARD_KERNEL_IMAGE_NAME := Image
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+
 # Platform
 TARGET_BOARD_PLATFORM := cupid
 TARGET_BOOTLOADER_BOARD_NAME := sun50iw9p1
