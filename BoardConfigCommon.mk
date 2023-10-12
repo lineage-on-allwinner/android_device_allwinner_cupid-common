@@ -26,5 +26,9 @@ BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=0,1,2
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
+# Platform
+TARGET_BOARD_PLATFORM := cupid
+TARGET_BOOTLOADER_BOARD_NAME := sun50iw9p1
+
 # Inherit the proprietary files
 include vendor/allwinner/cupid-common/BoardConfigVendor.mk
