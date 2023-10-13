@@ -1,0 +1,11 @@
+on property:persist.vendor.overlay.wlan_vendor=broadcom
+    setprop wifi.direct.interface p2p-dev-wlan0
+
+on property:persist.vendor.overlay.wlan_vendor=realtek
+    setprop wifi.direct.interface p2p0
+
+on property:persist.vendor.overlay.wlan_vendor=xradio
+    setprop wifi.direct.interface p2p-dev-wlan0
+
+on property:persist.vendor.overlay.wlan_vendor=sprd
+    setprop wifi.direct.interface p2p-dev-wlan0

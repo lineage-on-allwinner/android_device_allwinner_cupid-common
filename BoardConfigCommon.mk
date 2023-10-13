@@ -93,5 +93,14 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 # VNDK
 BOARD_VNDK_VERSION := current
 
+# Wi-Fi
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_WLAN_DEVICE := common
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_common
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_common
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+
 # Inherit the proprietary files
 include vendor/allwinner/cupid-common/BoardConfigVendor.mk

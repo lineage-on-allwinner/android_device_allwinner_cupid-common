@@ -18,6 +18,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.wireless.wlan.rc",
+    src: "init.wireless.wlan.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.device.rc",
     src: "init.device.rc",
     sub_dir: "init/hw",
