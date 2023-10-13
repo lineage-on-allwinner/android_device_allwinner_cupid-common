@@ -1,0 +1,57 @@
+on init
+    write /sys/block/zram0/backing_dev /dev/block/by-name/zram_back
+
+on boot
+    chown system system /sys/kernel/autohotplug/enable
+    chmod 0660 /sys/kernel/autohotplug/enable
+
+    chown system system /sys/kernel/autohotplug/boost_all
+    chmod 0660 /sys/kernel/autohotplug/boost_all
+
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/boot_lock
+    chmod 0660 /sys/devices/system/cpu/cpu0/cpufreq/boot_lock
+
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+    chmod 0660 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+    chown system system /sys/devices/platform/soc/cpu_budget_cooling/roomage
+    chmod 0660 /sys/devices/platform/soc/cpu_budget_cooling/roomage
+    write /sys/devices/platform/soc/cpu_budget_cooling/roomage "1416000 4 0 0 1416000 4 0 0"
+
+    chown system system /sys/devices/platform/gpu/scenectrl/command
+    chmod 0660 /sys/devices/platform/gpu/scenectrl/command
+
+    chown system system /sys/class/thermal/thermal_zone0/emul_temp
+    chmod 0660 /sys/class/thermal/thermal_zone0/emul_temp
+    chown system system /sys/class/thermal/thermal_zone0/policy
+    chmod 0660 /sys/class/thermal/thermal_zone0/policy
+
+    write /sys/class/disp/disp/attr/runtime_enable 1
+    write /sys/kernel/autohotplug/enable 1
+    write /sys/kernel/autohotplug/boost_all 0
+
+    # Read one page at a time for swap (default is 8)
+    write /proc/sys/vm/page-cluster 0
+
+    # hdmi set shake delay time for audio.
+    write /sys/module/snd_soc_sunxi_hdmi/parameters/shake_msleep 200
+
+on late-fs
+### csi module
+    insmod /vendor/modules/videobuf2-core.ko
+    insmod /vendor/modules/videobuf2-memops.ko
+    insmod /vendor/modules/videobuf2-vmalloc.ko
+    insmod /vendor/modules/videobuf2-dma-contig.ko
+    insmod /vendor/modules/videobuf2-v4l2.ko
+    insmod /vendor/modules/vin_io.ko
+    insmod /vendor/modules/vin_v4l2.ko
+    insmod /vendor/modules/uvcvideo.ko
+
+    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/iostats 0
+    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/nr_requests 256
+    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/read_ahead_kb 1024
+
+on property:sys.boot_completed=1
+    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/iostats 1
+    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/nr_requests 128
+    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/read_ahead_kb 128
+    write /sys/class/thermal/thermal_zone0/policy power_allocator

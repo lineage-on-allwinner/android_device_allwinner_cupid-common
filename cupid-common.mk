@@ -30,6 +30,16 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.recovery.sun50iw9p1.rc:recovery/root/init.recovery.sun50iw9p1.rc
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.sun50iw9p1 \
+    fstab.sun50iw9p1_ramdisk \
+    init.device.rc \
+    init.display.rc \
+    init.sun50iw9p1.rc \
+    init.sun50iw9p1.usb.rc \
+    ueventd.sun50iw9p1.rc
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

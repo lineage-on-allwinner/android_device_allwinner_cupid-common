@@ -64,7 +64,7 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.cupid
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.sun50iw9p1
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Verified Boot

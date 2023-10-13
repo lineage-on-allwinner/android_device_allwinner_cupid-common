@@ -1,0 +1,47 @@
+//
+// Copyright (C) 2023 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "fstab.sun50iw9p1",
+    src: "fstab.sun50iw9p1",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.device.rc",
+    src: "init.device.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.display.rc",
+    src: "init.display.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.sun50iw9p1.rc",
+    src: "init.sun50iw9p1.rc",
+    filename_from_src: true,
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.sun50iw9p1.usb.rc",
+    src: "init.sun50iw9p1.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.sun50iw9p1.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.sun50iw9p1.rc",
+    vendor: true,
+}
