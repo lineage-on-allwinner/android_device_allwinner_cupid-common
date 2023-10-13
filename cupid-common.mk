@@ -49,6 +49,15 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
 
+# CEC
+PRODUCT_PACKAGES += \
+    android.hardware.tv.cec@1.0-impl \
+    android.hardware.tv.cec@1.0-service \
+    hdmi_cec.cupid
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.hdmi.cec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hdmi.cec.xml
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.2-service \
