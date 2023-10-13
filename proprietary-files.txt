@@ -5,6 +5,10 @@
 -vendor/lib/hw/sound_trigger.primary.cupid.so
 -vendor/lib/libtinyalsa_audio.so
 
+# Display
+-vendor/lib/egl/libGLES_mali.so
+-vendor/lib/hw/gralloc.cupid.so
+
 # Firmware (Broadcom)
 vendor/etc/firmware/BCM4345C5.hcd
 vendor/etc/firmware/bcm20710a1.hcd
