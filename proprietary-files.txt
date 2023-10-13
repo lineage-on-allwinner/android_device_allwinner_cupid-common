@@ -1,0 +1,6 @@
+# Unpinned blobs from Orange Pi Zero2 Android Image (cupid_p2-eng 10 QP1A.191105.004 eng.test.20210825.172013 test-keys)
+
+# Audio
+-vendor/lib/hw/audio.primary.cupid.so
+-vendor/lib/hw/sound_trigger.primary.cupid.so
+-vendor/lib/libtinyalsa_audio.so
