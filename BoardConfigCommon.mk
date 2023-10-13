@@ -79,6 +79,9 @@ BOARD_ROOT_EXTRA_FOLDERS += Reserve0
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
+# TEE
+BOARD_HAS_SECURE_OS := true
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3

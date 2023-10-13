@@ -105,6 +105,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# TEE
+PRODUCT_PACKAGES += \
+    tee_supplicant
+
 # Wireless
 PRODUCT_PACKAGES += \
     wireless_hwinfo
