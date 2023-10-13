@@ -1,0 +1,4 @@
+# Bluetooth
+bluetooth.enable_timeout_ms=8000
+persist.vendor.bluetooth_port=/dev/ttyS1
+ro.bt.bdaddr_path=/sys/class/addr_mgt/addr_bt

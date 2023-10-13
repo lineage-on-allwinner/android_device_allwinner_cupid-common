@@ -16,6 +16,9 @@ TARGET_CPU_VARIANT_RUNTIME := cortex-a53
 
 TARGET_USES_64_BIT_BINDER := true
 
+# Bluetooth
+BOARD_CUSTOM_BT_CONFIG := $(COMMON_PATH)/configs/bluetooth/vnd_cupid.txt
+
 # Boot
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x80000 --ramdisk_offset 0x03000000 --dtb_offset 0x4000000 --header_version 0x2
@@ -62,6 +65,9 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_VENDOR := vendor
+
+# Properties
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.sun50iw9p1
