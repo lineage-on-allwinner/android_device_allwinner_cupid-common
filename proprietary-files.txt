@@ -146,6 +146,40 @@ vendor/etc/firmware/sdd_xr819.bin
 vendor/etc/firmware/sdd_xr829.bin
 vendor/etc/firmware/bt_sdd.bin
 
+# Media
+-vendor/lib/libstagefrighthw.so
+-vendor/lib/libawavs2.so
+-vendor/lib/libawavs.so
+-vendor/lib/libawh264.so
+-vendor/lib/libawh265.so
+-vendor/lib/libawh265soft.so
+-vendor/lib/libawmjpegplus.so
+-vendor/lib/libawmjpeg.so
+-vendor/lib/libawmpeg2.so
+-vendor/lib/libawmpeg4base.so
+-vendor/lib/libawmpeg4dx.so
+-vendor/lib/libawmpeg4h263.so
+-vendor/lib/libawmpeg4normal.so
+-vendor/lib/libawmpeg4vp6.so
+-vendor/lib/libawvp6soft.so
+-vendor/lib/libawvp8.so
+-vendor/lib/libawvp9HwAL.so
+-vendor/lib/libawvp9Hw.so
+-vendor/lib/libawvp9soft.so
+-vendor/lib/libawwmv12soft.so
+-vendor/lib/libawwmv3.so
+-vendor/lib/libcdc_base.so
+-vendor/lib/libMemAdapter.so
+-vendor/lib/libOmxCore.so
+-vendor/lib/libOmxVdec.so
+-vendor/lib/libOmxVenc.so
+-vendor/lib/libvdecoder.so
+-vendor/lib/libvenc_base.so
+-vendor/lib/libvenc_codec.so
+-vendor/lib/libvencoder.so
+-vendor/lib/libVE.so
+-vendor/lib/libvideoengine.so
+
 # TEE
 vendor/lib/optee_armtz/2233b43b-cec6-449a-9509469f5023e425.ta
 vendor/lib/optee_armtz/663d017b-102d-4fe0-c086523e1c754846.ta
