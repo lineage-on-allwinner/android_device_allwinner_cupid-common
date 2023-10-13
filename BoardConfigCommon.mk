@@ -73,6 +73,12 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.sun50iw9p1
 TARGET_USERIMAGES_USE_EXT4 := true
 
+# Root
+BOARD_ROOT_EXTRA_FOLDERS += Reserve0
+
+# Sepolicy
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
