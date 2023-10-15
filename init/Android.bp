@@ -47,6 +47,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.sun50iw9p1.power.rc",
+    src: "init.sun50iw9p1.power.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.sun50iw9p1.usb.rc",
     src: "init.sun50iw9p1.usb.rc",
     sub_dir: "init/hw",

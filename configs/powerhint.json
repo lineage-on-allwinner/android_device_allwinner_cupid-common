@@ -1,0 +1,72 @@
+{
+    "Nodes": [
+        {
+          "Name": "CPUMaxFreq",
+          "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq",
+          "Values": [
+            "1512000",
+            "1200000",
+            "1008000",
+            "792000",
+            "600000",
+            "480000"
+          ],
+          "DefaultIndex": 0,
+          "ResetOnInit": true
+        },
+        {
+          "Name": "CPUMinFreq",
+          "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq",
+          "Values": [
+            "1512000",
+            "1200000",
+            "1008000",
+            "792000",
+            "600000",
+            "480000"
+          ],
+          "ResetOnInit": true
+        },
+        {
+          "Name": "ThermalEmulTemp",
+          "Path": "/sys/class/thermal/thermal_zone0/emul_temp",
+          "Values": [
+              "50",
+              "0"
+          ],
+          "ResetOnInit": true
+        }
+    ],
+    "Actions": [
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "CPUMaxFreq",
+            "Duration": 0,
+            "Value": "1512000"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "CPUMinFreq",
+            "Duration": 0,
+            "Value": "1512000"
+        },
+        {
+            "PowerHint": "SUSTAINED_PERFORMANCE",
+            "Node": "CPUMaxFreq",
+            "Duration": 0,
+            "Value": "1512000"
+        },
+        {
+            "PowerHint": "SUSTAINED_PERFORMANCE",
+            "Node": "CPUMinFreq",
+            "Duration": 0,
+            "Value": "1512000"
+        },
+        {
+            "PowerHint": "SUSTAINED_PERFORMANCE",
+            "Node": "ThermalEmulTemp",
+            "Duration": 0,
+            "Value": "50"
+        }
+    ]
+}

@@ -141,6 +141,13 @@ PRODUCT_PACKAGES += \
     TetheringResOverlayCupid \
     WifiResOverlayCupid
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.aw-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Recovery
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.recovery.sun50iw9p1.rc:recovery/root/init.recovery.sun50iw9p1.rc
@@ -152,12 +159,15 @@ PRODUCT_PACKAGES += \
     init.device.rc \
     init.display.rc \
     init.sun50iw9p1.rc \
+    init.sun50iw9p1.power.rc \
     init.sun50iw9p1.usb.rc \
     ueventd.sun50iw9p1.rc
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # TEE
 PRODUCT_PACKAGES += \
