@@ -9,6 +9,13 @@
 -vendor/lib/egl/libGLES_mali.so
 -vendor/lib/hw/gralloc.cupid.so
 
+# DRM - from Orange Pi Zero3 Android Image (apollo_p2-userdebug 12 SP1A.211105.004 20230619.221321 test-keys)
+-vendor/bin/hw/android.hardware.drm@1.4-service-lazy.widevine|98386270c0fa3d1559b85507d410618ad46e6563
+vendor/etc/init/android.hardware.drm@1.4-service-lazy.widevine.rc|ff813acea8ba43871b6d254a02ce5404f7615739
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml|91d7c0996133556cb7f7c5d1b7e5d9e7f07b78b2
+-vendor/lib/libwvhidl.so|3a47ad78e2bb06ec0c16b9471e1078ba17f9cc11
+-vendor/lib/mediadrm/libwvdrmengine.so|3163e9c860bd14dc9f9fa6560e6a58d079ea561a
+
 # Firmware (Broadcom)
 vendor/etc/firmware/BCM4345C5.hcd
 vendor/etc/firmware/bcm20710a1.hcd
