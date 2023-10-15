@@ -1,0 +1,23 @@
+key 139   BACK               WAKE_DROPPED
+key  91  VOLUME_MUTE               WAKE_DROPPED
+key  220  VOLUME_MUTE               WAKE_DROPPED
+key 178    DPAD_CENTER        WAKE_DROPPED
+key 141   DPAD_DOWN          WAKE_DROPPED
+key 132   DPAD_UP            WAKE_DROPPED
+key 79   HOME               WAKE
+key 187   DPAD_LEFT          WAKE_DROPPED
+key 142   DPAD_RIGHT         WAKE_DROPPED
+key 137   VOLUME_UP          WAKE
+key 181   VOLUME_DOWN        WAKE
+key 135   POWER              WAKE
+key 69   F5              WAKE
+key 102  HELP              WAKE
+key 72   F6               WAKE
+key 70   F7              WAKE
+key 71   F8              WAKE
+
+key 69   F5              WAKE
+key 245   F8               WAKE
+key 138   MENU              WAKE
+
+

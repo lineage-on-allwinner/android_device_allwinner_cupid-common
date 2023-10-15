@@ -102,6 +102,22 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# IR
+PRODUCT_PACKAGES += \
+    multi_ir \
+    multi_ir.recovery
+
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/remotes/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/remotes/,recovery/root/system/usr/keylayout)
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/sunxi-ir-uinput.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/sunxi-ir-uinput.kl \
+    $(LOCAL_PATH)/configs/keylayout/sunxi-ir.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/sunxi-ir.kl \
+    $(LOCAL_PATH)/configs/keylayout/sunxi-ir-recovery.kl:recovery/root/system/usr/keylayout/sunxi-ir.kl \
+    $(LOCAL_PATH)/configs/keylayout/sunxi-ir-uinput.kl:recovery/root/system/usr/keylayout/sunxi-ir-uinput.kl
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service-aw
