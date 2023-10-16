@@ -13,6 +13,7 @@ bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=true
+bluetooth.le.disable_apcf_extended_features=1
 persist.vendor.bluetooth_port=/dev/ttyS1
 ro.bt.bdaddr_path=/sys/class/addr_mgt/addr_bt
 
