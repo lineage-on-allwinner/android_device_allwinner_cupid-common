@@ -205,6 +205,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml
 
+PRODUCT_CFI_INCLUDE_PATHS += \
+    hardware/aw/wlan/wpa_supplicant_8_lib/common \
+    hardware/aw/wlan/wpa_supplicant_8_lib/vendor/broadcom \
+    hardware/aw/wlan/wpa_supplicant_8_lib/vendor/realtek \
+    hardware/aw/wlan/wpa_supplicant_8_lib/vendor/sprd \
+    hardware/aw/wlan/wpa_supplicant_8_lib/vendor/ssv \
+    hardware/aw/wlan/wpa_supplicant_8_lib/vendor/xradio
+
 # Wireless
 PRODUCT_PACKAGES += \
     wireless_hwinfo
