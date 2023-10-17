@@ -1,4 +1,16 @@
+on late-fs
+    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/iostats 0
+    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/nr_requests 256
+    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/read_ahead_kb 1024
+
 on property:sys.boot_completed=1
+    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/iostats 1
+    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/nr_requests 128
+    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/read_ahead_kb 128
+
+    # Configure thermal policy
+    write /sys/class/thermal/thermal_zone0/policy power_allocator
+
     # Switch CPU governor to interactive
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
 

@@ -34,24 +34,3 @@ on boot
 
     # hdmi set shake delay time for audio.
     write /sys/module/snd_soc_sunxi_hdmi/parameters/shake_msleep 200
-
-on late-fs
-### csi module
-    insmod /vendor/modules/videobuf2-core.ko
-    insmod /vendor/modules/videobuf2-memops.ko
-    insmod /vendor/modules/videobuf2-vmalloc.ko
-    insmod /vendor/modules/videobuf2-dma-contig.ko
-    insmod /vendor/modules/videobuf2-v4l2.ko
-    insmod /vendor/modules/vin_io.ko
-    insmod /vendor/modules/vin_v4l2.ko
-    insmod /vendor/modules/uvcvideo.ko
-
-    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/iostats 0
-    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/nr_requests 256
-    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/read_ahead_kb 1024
-
-on property:sys.boot_completed=1
-    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/iostats 1
-    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/nr_requests 128
-    write /sys/devices/platform/soc/sdc2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/read_ahead_kb 128
-    write /sys/class/thermal/thermal_zone0/policy power_allocator
