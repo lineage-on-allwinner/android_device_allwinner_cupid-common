@@ -9,3 +9,6 @@ on property:persist.vendor.overlay.wlan_vendor=xradio
 
 on property:persist.vendor.overlay.wlan_vendor=sprd
     setprop wifi.direct.interface p2p-dev-wlan0
+
+on property:persist.vendor.overlay.wlan_module=*
+    insmod /vendor/lib/modules/${persist.vendor.overlay.wlan_module}.ko
