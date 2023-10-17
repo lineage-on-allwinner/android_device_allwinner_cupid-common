@@ -13,14 +13,14 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.wireless.bluetooth.rc",
     src: "init.wireless.bluetooth.rc",
-    sub_dir: "init",
+    sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.wireless.wlan.rc",
     src: "init.wireless.wlan.rc",
-    sub_dir: "init",
+    sub_dir: "init/hw",
     vendor: true,
 }
 

@@ -1,6 +1,8 @@
-import /vendor/etc/init/hw/init.device.rc
 import /vendor/etc/init/hw/init.sun50iw9p1.power.rc
 import /vendor/etc/init/hw/init.sun50iw9p1.usb.rc
+import /vendor/etc/init/hw/init.device.rc
+import /vendor/etc/init/hw/init.wireless.bluetooth.rc
+import /vendor/etc/init/hw/init.wireless.wlan.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
