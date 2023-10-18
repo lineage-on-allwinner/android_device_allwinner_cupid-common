@@ -3,17 +3,17 @@ on post-fs-data
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
 
-on property:persist.vendor.overlay.wlan_vendor=broadcom
+on early-boot && property:persist.vendor.overlay.wlan_vendor=broadcom
     setprop wifi.direct.interface p2p-dev-wlan0
 
-on property:persist.vendor.overlay.wlan_vendor=realtek
+on early-boot && property:persist.vendor.overlay.wlan_vendor=realtek
     setprop wifi.direct.interface p2p0
 
-on property:persist.vendor.overlay.wlan_vendor=xradio
+on early-boot && property:persist.vendor.overlay.wlan_vendor=xradio
     setprop wifi.direct.interface p2p-dev-wlan0
 
-on property:persist.vendor.overlay.wlan_vendor=sprd
+on early-boot && property:persist.vendor.overlay.wlan_vendor=sprd
     setprop wifi.direct.interface p2p-dev-wlan0
 
-on property:persist.vendor.overlay.wlan_module=*
+on early-boot && property:persist.vendor.overlay.wlan_module=*
     insmod /vendor/lib/modules/${persist.vendor.overlay.wlan_module}.ko
