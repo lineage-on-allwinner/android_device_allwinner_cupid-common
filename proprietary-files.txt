@@ -120,14 +120,14 @@ vendor/etc/firmware/rtl8822b_fw
 vendor/etc/firmware/rtl8822bs_config
 vendor/etc/firmware/rtl8822bs_fw
 
-# Firmware (Spreadtrum)
-vendor/etc/firmware/wcnmodem.bin
-vendor/etc/firmware/EXEC_KERNEL_IMAGE.bin
-vendor/etc/firmware/OS_ROM.bin
-vendor/etc/bt_configure_pskey.ini
-vendor/etc/bt_configure_rf.ini
-vendor/etc/wifi_2355b001_1ant.ini
-vendor/etc/wifi_board_config.ini
+# Firmware (Spreadtrum) - from T95 A.27 firmware image (cupid_p1-userdebug 10 QP1A.191105.004 eng.cmj.20220712.154443 test-keys)
+vendor/etc/firmware/wcnmodem.bin|57862b687d222c79f76e0e5449bd8041c6324659
+vendor/etc/firmware/EXEC_KERNEL_IMAGE.bin|b2907717c675cadad48309c91f49ee9c5327930a
+vendor/etc/firmware/OS_ROM.bin|ceb9bcd5a20ee5b29948c97e9de0a478923db517
+vendor/etc/bt_configure_pskey.ini|0069f236c75f4b10432f94915190ef19efce7b62
+vendor/etc/bt_configure_rf.ini|3401da79857d8c2eed596482f8b8ca72ab590ed2
+vendor/etc/wifi_2355b001_1ant.ini|811e7cebfcbe8461f67cea60bbd6b9bb31d6057d
+vendor/etc/wifi_board_config.ini|811e7cebfcbe8461f67cea60bbd6b9bb31d6057d
 
 # Firmware (SSV)
 vendor/etc/firmware/ssv6x5x/flash.bin
