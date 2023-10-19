@@ -32,6 +32,7 @@ ro.lmk.use_new_strategy=true
 
 # SurfaceFlinger
 debug.sf.disable_client_composition_cache=1
+debug.sf.enable_transaction_tracing=false
 
 # USB
 persist.vendor.usb0device=1
