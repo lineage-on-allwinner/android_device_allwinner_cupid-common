@@ -32,6 +32,10 @@ BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 # HIDL
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_cupid
+TARGET_RECOVERY_DEVICE_MODULES := libinit_cupid
+
 # Kernel
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
