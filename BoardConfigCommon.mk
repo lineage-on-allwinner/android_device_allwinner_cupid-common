@@ -45,6 +45,9 @@ BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
+# Malloc
+MALLOC_SVELTE := true
+
 # Platform
 TARGET_BOARD_PLATFORM := cupid
 TARGET_BOARD_PLATFORM_GPU := mali-g31
