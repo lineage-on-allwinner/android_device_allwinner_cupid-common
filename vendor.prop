@@ -17,6 +17,12 @@ bluetooth.le.disable_apcf_extended_features=1
 persist.vendor.bluetooth_port=/dev/ttyS1
 ro.bt.bdaddr_path=/sys/class/addr_mgt/addr_bt
 
+# LMK
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=100
+ro.lmk.use_minfree_levels=true
+ro.lmk.use_new_strategy=true
+
 # USB
 persist.vendor.usb0device=1
 
