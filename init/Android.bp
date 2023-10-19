@@ -32,13 +32,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.display.rc",
-    src: "init.display.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.sun50iw9p1.rc",
     src: "init.sun50iw9p1.rc",
     filename_from_src: true,

@@ -156,7 +156,6 @@ PRODUCT_PACKAGES += \
     fstab.sun50iw9p1 \
     fstab.sun50iw9p1_ramdisk \
     init.device.rc \
-    init.display.rc \
     init.sun50iw9p1.rc \
     init.sun50iw9p1.power.rc \
     init.sun50iw9p1.usb.rc \
