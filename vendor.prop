@@ -33,6 +33,9 @@ ro.lmk.upgrade_pressure=60
 ro.lmk.use_minfree_levels=true
 ro.lmk.use_new_strategy=true
 
+# Media
+debug.stagefright.ccodec=0
+
 # SurfaceFlinger
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_transaction_tracing=false
