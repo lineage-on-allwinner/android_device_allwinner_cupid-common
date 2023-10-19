@@ -30,6 +30,9 @@ ro.lmk.upgrade_pressure=60
 ro.lmk.use_minfree_levels=true
 ro.lmk.use_new_strategy=true
 
+# SurfaceFlinger
+debug.sf.disable_client_composition_cache=1
+
 # USB
 persist.vendor.usb0device=1
 
