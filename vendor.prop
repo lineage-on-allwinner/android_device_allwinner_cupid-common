@@ -19,6 +19,8 @@ ro.bt.bdaddr_path=/sys/class/addr_mgt/addr_bt
 
 # Dalvik
 dalvik.vm.madvise-random=true
+dalvik.vm.minidebuginfo=false
+dalvik.vm.dex2oat-minidebuginfo=false
 
 # LMK
 ro.lmk.kill_heaviest_task=true
