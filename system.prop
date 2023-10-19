@@ -13,3 +13,6 @@ pm.dexopt.shared=quicken
 
 # Remove the llkd process
 ro.llk.enable=false
+
+# Disable surfaceflinger prime_shader cache to improve post boot memory.
+service.sf.prime_shader_cache=0
