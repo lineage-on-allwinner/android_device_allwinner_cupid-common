@@ -147,6 +147,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     FrameworksResOverlayCupid \
+    SimpleDeviceConfigOverlayCupid \
     TetheringResOverlayCupid \
     WifiResOverlayCupid
 
