@@ -77,6 +77,13 @@
          property. If this is false, then the following recents config flags are ignored. -->
     <bool name="config_hasRecents">false</bool>
 
+    <!-- Device configuration indicating whether we should avoid using accelerated graphics
+         in certain places to reduce RAM footprint.  This is ignored if ro.config.low_ram
+         is true (in that case this is assumed true as well).  It can allow you to tune down
+         your device's memory use without going to the point of causing applications to turn
+         off features. -->
+    <bool name="config_avoidGfxAccel">true</bool>
+
     <!-- Setting this true forces the headset jack switches to use the/dev/input/event subsystem
          rather than the uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
