@@ -22,6 +22,9 @@ dalvik.vm.madvise-random=true
 dalvik.vm.minidebuginfo=false
 dalvik.vm.dex2oat-minidebuginfo=false
 
+# Display
+ro.opengles.version=196610
+
 # LMK
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
