@@ -16,6 +16,9 @@ $(call inherit-product, device/allwinner/cupid-common/go_opt.mk)
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
+# AAPT
+PRODUCT_AAPT_PREF_CONFIG := tvdpi
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
