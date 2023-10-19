@@ -11,15 +11,15 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.wireless.bluetooth.rc",
-    src: "init.wireless.bluetooth.rc",
+    name: "init.wireless.modprobe.rc",
+    src: "init.wireless.modprobe.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.wireless.wlan.rc",
-    src: "init.wireless.wlan.rc",
+    name: "init.wireless.rc",
+    src: "init.wireless.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
@@ -64,5 +64,11 @@ prebuilt_etc {
     name: "ueventd.sun50iw9p1.rc",
     filename: "ueventd.rc",
     src: "ueventd.sun50iw9p1.rc",
+    vendor: true,
+}
+
+sh_binary {
+    name: "wireless_modprobe.sh",
+    src: "wireless_modprobe.sh",
     vendor: true,
 }

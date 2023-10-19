@@ -13,27 +13,12 @@ on boot
     # bluetooth MAC address programming
     chown bluetooth net_bt_admin ${ro.bt.bdaddr_path}
 
-on property:persist.vendor.overlay.bluetooth_vendor=broadcom
-    insmod /vendor/lib/modules/bcm_btlpm.ko
-    setprop vendor.init.lpm.load 1
+on post-fs-data
+    mkdir /data/vendor/wifi 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
 
-on property:persist.vendor.overlay.bluetooth_vendor=realtek
-    insmod /vendor/lib/modules/rtl_btlpm.ko
-    setprop vendor.init.lpm.load 1
-
-on property:persist.vendor.overlay.bluetooth_vendor=xradio
-    insmod /vendor/lib/modules/xradio_btlpm.ko
-    setprop vendor.init.lpm.load 1
-
-on property:persist.vendor.overlay.bluetooth_vendor=sprd
-    insmod /vendor/lib/modules/uwe5622_bsp_sdio.ko
-    insmod /vendor/lib/modules/sprdbt_tty.ko
-    setprop vendor.init.lpm.load 1
-
-on property:vendor.driver.lpm.load=1
-    setprop vendor.init.lpm.load 1
-
-on property:vendor.init.lpm.load=1
+on property:vendor.init.modules.lpm_load=1
     chmod 0660 /proc/bluetooth/sleep/lpm
     chmod 0660 /proc/bluetooth/sleep/btwrite
     chmod 0660 /proc/bluetooth/sleep/btwake
@@ -56,3 +41,15 @@ on property:persist.vendor.overlay.bluetooth_vendor=realtek && property:sys.boot
 on property:persist.vendor.overlay.bluetooth_vendor=xradio && property:vold.post_fs_data_done=1
     mkdir /data/vendor/bluetooth 0771 bluetooth bluetooth
     mkdir /data/vendor/bluetooth/sdd 0770 bluetooth bluetooth
+
+on property:persist.vendor.overlay.wlan_vendor=broadcom
+    setprop wifi.direct.interface p2p-dev-wlan0
+
+on property:persist.vendor.overlay.wlan_vendor=realtek
+    setprop wifi.direct.interface p2p0
+
+on property:persist.vendor.overlay.wlan_vendor=xradio
+    setprop wifi.direct.interface p2p-dev-wlan0
+
+on property:persist.vendor.overlay.wlan_vendor=sprd
+    setprop wifi.direct.interface p2p-dev-wlan0

@@ -38,8 +38,7 @@ PRODUCT_PACKAGES += \
     libbt-xradio \
     libbt-broadcom \
     libbt-realtek \
-    libbt-sprd \
-    init.wireless.bluetooth.rc
+    libbt-sprd
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/bluetooth/bt_vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_vendor.conf \
@@ -161,6 +160,9 @@ PRODUCT_PACKAGES += \
     init.sun50iw9p1.rc \
     init.sun50iw9p1.power.rc \
     init.sun50iw9p1.usb.rc \
+    init.wireless.rc \
+    init.wireless.modprobe.rc \
+    wireless_modprobe.sh \
     ueventd.sun50iw9p1.rc
 
 # Soong namespaces
@@ -193,9 +195,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-sprd \
     libwifi-hal-ssv \
     libwifi-hal-xradio
-
-PRODUCT_PACKAGES += \
-    init.wireless.wlan.rc
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi) \
