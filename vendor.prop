@@ -35,3 +35,6 @@ persist.vendor.usb0device=1
 
 # Wi-Fi
 wifi.interface=wlan0
+
+# Zygote
+zygote.critical_window.minute=10
