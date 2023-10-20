@@ -1,4 +1,4 @@
-# Unpinned blobs from Orange Pi Zero2 Android Image (cupid_p2-eng 10 QP1A.191105.004 eng.test.20210825.172013 test-keys)
+# Unpinned blobs from T95 A.29 Android Image (cupid_p1-userdebug 10 QP1A.191105.004 eng.cmj.20220712.154443 test-keys)
 
 # Audio
 -vendor/lib/hw/audio.primary.cupid.so
@@ -16,61 +16,61 @@ vendor/etc/init/android.hardware.drm@1.4-service-lazy.widevine.rc|ff813acea8ba43
 -vendor/lib/libwvhidl.so|3a47ad78e2bb06ec0c16b9471e1078ba17f9cc11
 -vendor/lib/mediadrm/libwvdrmengine.so|3163e9c860bd14dc9f9fa6560e6a58d079ea561a
 
-# Firmware (Broadcom)
-vendor/etc/firmware/BCM4345C5.hcd
-vendor/etc/firmware/bcm20710a1.hcd
-vendor/etc/firmware/bcm2076b1.hcd
-vendor/etc/firmware/bcm40183b2.hcd
-vendor/etc/firmware/bcm43341b0.hcd
-vendor/etc/firmware/bcm4339a0.hcd
-vendor/etc/firmware/bcm43438a0.hcd
-vendor/etc/firmware/bcm43438a1.hcd
-vendor/etc/firmware/bcm4345c0.hcd
-vendor/etc/firmware/bcm4345c5.hcd
-vendor/etc/firmware/config_ap6181.txt
-vendor/etc/firmware/config_ap6210.txt
-vendor/etc/firmware/config_ap6212.txt
-vendor/etc/firmware/config_ap6212a.txt
-vendor/etc/firmware/config_ap6234.txt
-vendor/etc/firmware/config_ap6255.txt
-vendor/etc/firmware/config_ap6256.txt
-vendor/etc/firmware/config_ap6330.txt
-vendor/etc/firmware/config_ap6335.txt
-vendor/etc/firmware/config_ap6476.txt
-vendor/etc/firmware/fw_bcm40181a2.bin
-vendor/etc/firmware/fw_bcm40181a2_apsta.bin
-vendor/etc/firmware/fw_bcm40181a2_p2p.bin
-vendor/etc/firmware/fw_bcm40183b2_ag.bin
-vendor/etc/firmware/fw_bcm40183b2_ag_apsta.bin
-vendor/etc/firmware/fw_bcm40183b2_ag_p2p.bin
-vendor/etc/firmware/fw_bcm43341b0_ag.bin
-vendor/etc/firmware/fw_bcm43341b0_ag_apsta.bin
-vendor/etc/firmware/fw_bcm43341b0_ag_p2p.bin
-vendor/etc/firmware/fw_bcm4339a0_ag.bin
-vendor/etc/firmware/fw_bcm4339a0_ag_apsta.bin
-vendor/etc/firmware/fw_bcm4339a0_ag_p2p.bin
-vendor/etc/firmware/fw_bcm43438a0.bin
-vendor/etc/firmware/fw_bcm43438a0_apsta.bin
-vendor/etc/firmware/fw_bcm43438a0_p2p.bin
-vendor/etc/firmware/fw_bcm43438a1.bin
-vendor/etc/firmware/fw_bcm43438a1_apsta.bin
-vendor/etc/firmware/fw_bcm43438a1_p2p.bin
-vendor/etc/firmware/fw_bcm43455c0_ag.bin
-vendor/etc/firmware/fw_bcm43455c0_ag_apsta.bin
-vendor/etc/firmware/fw_bcm43455c0_ag_p2p.bin
-vendor/etc/firmware/fw_bcm43456c5_ag.bin
-vendor/etc/firmware/fw_bcm43456c5_ag_apsta.bin
-vendor/etc/firmware/fw_bcm43456c5_ag_mfg.bin
-vendor/etc/firmware/fw_bcm43456c5_ag_p2p.bin
-vendor/etc/firmware/nvram_ap6181.txt
-vendor/etc/firmware/nvram_ap6210.txt
-vendor/etc/firmware/nvram_ap6212.txt
-vendor/etc/firmware/nvram_ap6234.txt
-vendor/etc/firmware/nvram_ap6255.txt
-vendor/etc/firmware/nvram_ap6256.txt
-vendor/etc/firmware/nvram_ap6330.txt
-vendor/etc/firmware/nvram_ap6335.txt
-vendor/etc/firmware/nvram_ap6476.txt
+# Firmware (Broadcom) - from Orange Pi Zero2 Android Image (cupid_p2-eng 10 QP1A.191105.004 eng.test.20210825.172013 test-keys)
+vendor/etc/firmware/BCM4345C5.hcd|d7facb39fea2709b16c192832db381b075164169
+vendor/etc/firmware/bcm20710a1.hcd|628d9d55abbaf9571b3db0a5eae705d3cddef7fa
+vendor/etc/firmware/bcm2076b1.hcd|a7dc3ab279304ce558561605b22ea1e3745a8598
+vendor/etc/firmware/bcm40183b2.hcd|c3bce90cc95c0fba4ada56719b5a69ff78074134
+vendor/etc/firmware/bcm43341b0.hcd|bf3457aa07e66fa88b9ce8a9a2af60e8748a8f0a
+vendor/etc/firmware/bcm4339a0.hcd|52c67789f410bdcdc5c7675ca4dccbca55a1f2b2
+vendor/etc/firmware/bcm43438a0.hcd|663b8677ca48bd26990eea88afe46855c5d44bb3
+vendor/etc/firmware/bcm43438a1.hcd|4acd7057d7676d54bdf6fc1fb7478296dfe0e68f
+vendor/etc/firmware/bcm4345c0.hcd|ecf3f14cb481821b1e9a1a1c9bf3f728b62f3463
+vendor/etc/firmware/bcm4345c5.hcd|d7facb39fea2709b16c192832db381b075164169
+vendor/etc/firmware/config_ap6181.txt|fa48907f08e81f6fd2205b13bc4c4ca6c122f4e9
+vendor/etc/firmware/config_ap6210.txt|0e45fa08f32dd78084994b70b3c6e5ca0f5a95fc
+vendor/etc/firmware/config_ap6212.txt|e5c422eb626ba4c8068a144965f41e4a33e8fac2
+vendor/etc/firmware/config_ap6212a.txt|e5c422eb626ba4c8068a144965f41e4a33e8fac2
+vendor/etc/firmware/config_ap6234.txt|59c6d2586edfc7d5609f1046f8199b15eb89ccc0
+vendor/etc/firmware/config_ap6255.txt|3c8642e3e1eb1fb28f73519173a6773e2dae9bcf
+vendor/etc/firmware/config_ap6256.txt|3c8642e3e1eb1fb28f73519173a6773e2dae9bcf
+vendor/etc/firmware/config_ap6330.txt|59c6d2586edfc7d5609f1046f8199b15eb89ccc0
+vendor/etc/firmware/config_ap6335.txt|6d2421ab1cdafd71291c8a4b62428df5ea82afe6
+vendor/etc/firmware/config_ap6476.txt|e5c422eb626ba4c8068a144965f41e4a33e8fac2
+vendor/etc/firmware/fw_bcm40181a2.bin|f7d4a5e357f1a4677a84c0933db101aaf5402bbb
+vendor/etc/firmware/fw_bcm40181a2_apsta.bin|bf9d0348e891735af653bbd7f83a3afdf0c0e99c
+vendor/etc/firmware/fw_bcm40181a2_p2p.bin|c51314eafbf1ac927f066ba55207debe3936ffd7
+vendor/etc/firmware/fw_bcm40183b2_ag.bin|e5ccf55ca6f9ba5787735f9dd1ba0195d597723e
+vendor/etc/firmware/fw_bcm40183b2_ag_apsta.bin|7e3163d40c088332eb54703585c559160e0aee79
+vendor/etc/firmware/fw_bcm40183b2_ag_p2p.bin|e5ccf55ca6f9ba5787735f9dd1ba0195d597723e
+vendor/etc/firmware/fw_bcm43341b0_ag.bin|344e2cb859164195a98e3166aac210018fecc521
+vendor/etc/firmware/fw_bcm43341b0_ag_apsta.bin|344e2cb859164195a98e3166aac210018fecc521
+vendor/etc/firmware/fw_bcm43341b0_ag_p2p.bin|344e2cb859164195a98e3166aac210018fecc521
+vendor/etc/firmware/fw_bcm4339a0_ag.bin|daaaab406d2d95cc15d87fdb5ea0703a7ea963e2
+vendor/etc/firmware/fw_bcm4339a0_ag_apsta.bin|daaaab406d2d95cc15d87fdb5ea0703a7ea963e2
+vendor/etc/firmware/fw_bcm4339a0_ag_p2p.bin|daaaab406d2d95cc15d87fdb5ea0703a7ea963e2
+vendor/etc/firmware/fw_bcm43438a0.bin|e53358829d4ac449216faa7a962ff9fab1ed1edf
+vendor/etc/firmware/fw_bcm43438a0_apsta.bin|4a69ae42783753d58691a82a07736a81101fcaf7
+vendor/etc/firmware/fw_bcm43438a0_p2p.bin|e53358829d4ac449216faa7a962ff9fab1ed1edf
+vendor/etc/firmware/fw_bcm43438a1.bin|004183ad02eab4c4572cede514d3f7093c163357
+vendor/etc/firmware/fw_bcm43438a1_apsta.bin|004183ad02eab4c4572cede514d3f7093c163357
+vendor/etc/firmware/fw_bcm43438a1_p2p.bin|004183ad02eab4c4572cede514d3f7093c163357
+vendor/etc/firmware/fw_bcm43455c0_ag.bin|774b30d20ee93ab117be25d45d00264edd78afde
+vendor/etc/firmware/fw_bcm43455c0_ag_apsta.bin|774b30d20ee93ab117be25d45d00264edd78afde
+vendor/etc/firmware/fw_bcm43455c0_ag_p2p.bin|211a3fe6c64a3cf816fe402b5507f19e079b7071
+vendor/etc/firmware/fw_bcm43456c5_ag.bin|95da135af2ab24c418d70918b2ea5f14c5f1e298
+vendor/etc/firmware/fw_bcm43456c5_ag_apsta.bin|95da135af2ab24c418d70918b2ea5f14c5f1e298
+vendor/etc/firmware/fw_bcm43456c5_ag_mfg.bin|4c132240ec08b746a1dfb24ac42fe7410a01753a
+vendor/etc/firmware/fw_bcm43456c5_ag_p2p.bin|276a0201cbc77f47caff1cd13b56fbdc3bbc9ae0
+vendor/etc/firmware/nvram_ap6181.txt|1796e352d150ecf00dea40ce740865c8987096f5
+vendor/etc/firmware/nvram_ap6210.txt|7fc22ac5e716b7bd6e99b919dca41c4ad8348c09
+vendor/etc/firmware/nvram_ap6212.txt|fe7935d658330dd14252393f1493452fbd73933a
+vendor/etc/firmware/nvram_ap6234.txt|2a2897bae2c9e863ed3d89e2dc5078fc9846a466
+vendor/etc/firmware/nvram_ap6255.txt|e49dff485d0313cad3fc74251daae552b5c6f402
+vendor/etc/firmware/nvram_ap6256.txt|9e4219579c3c58ffba9752ff7a9334ca3df84687
+vendor/etc/firmware/nvram_ap6330.txt|ce12e1d6b52a857556158a74a6c4f3327f181a70
+vendor/etc/firmware/nvram_ap6335.txt|7031f55d141849f37a4b0169a3eeac14d8d27644
+vendor/etc/firmware/nvram_ap6476.txt|7b1e19ac75ed1570e2d8bdb1000dc16f3e9b2004
 
 # Firmware (Realtek)
 vendor/etc/firmware/rtl8703a_config
@@ -120,14 +120,14 @@ vendor/etc/firmware/rtl8822b_fw
 vendor/etc/firmware/rtl8822bs_config
 vendor/etc/firmware/rtl8822bs_fw
 
-# Firmware (Spreadtrum) - from T95 A.27 firmware image (cupid_p1-userdebug 10 QP1A.191105.004 eng.cmj.20220712.154443 test-keys)
-vendor/etc/firmware/wcnmodem.bin|57862b687d222c79f76e0e5449bd8041c6324659
-vendor/etc/firmware/EXEC_KERNEL_IMAGE.bin|b2907717c675cadad48309c91f49ee9c5327930a
-vendor/etc/firmware/OS_ROM.bin|ceb9bcd5a20ee5b29948c97e9de0a478923db517
-vendor/etc/bt_configure_pskey.ini|0069f236c75f4b10432f94915190ef19efce7b62
-vendor/etc/bt_configure_rf.ini|3401da79857d8c2eed596482f8b8ca72ab590ed2
-vendor/etc/wifi_2355b001_1ant.ini|811e7cebfcbe8461f67cea60bbd6b9bb31d6057d
-vendor/etc/wifi_board_config.ini|811e7cebfcbe8461f67cea60bbd6b9bb31d6057d
+# Firmware (Spreadtrum)
+vendor/etc/firmware/wcnmodem.bin
+vendor/etc/firmware/EXEC_KERNEL_IMAGE.bin
+vendor/etc/firmware/OS_ROM.bin
+vendor/etc/bt_configure_pskey.ini
+vendor/etc/bt_configure_rf.ini
+vendor/etc/wifi_2355b001_1ant.ini
+vendor/etc/wifi_board_config.ini
 
 # Firmware (SSV)
 vendor/etc/firmware/ssv6x5x/flash.bin
