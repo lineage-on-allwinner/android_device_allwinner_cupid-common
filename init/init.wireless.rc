@@ -29,6 +29,8 @@ on property:vendor.init.modules.lpm_load=1
     # only for sprd device
     chmod 0666 /sys/devices/platform/mtty/rfkill/rfkill1/state
     chmod 0666 /sys/devices/platform/mtty/rfkill/rfkill1/type
+    chmod 0666 /sys/devices/platform/mtty/rfkill/rfkill2/state
+    chmod 0666 /sys/devices/platform/mtty/rfkill/rfkill2/type
     chmod 0660 /dev/ttyBT0
     chown bluetooth net_bt_admin /dev/ttyBT0
 
